@@ -1,8 +1,18 @@
-<div style="position: relative; width: 100%; height: 100vh; max-height: 100%; overflow: hidden;">
-  <iframe
-    src="https://www.chatbase.co/chatbot-iframe/ZDr1rnQGAvT2f7TNrOccx"
-    style="border: none; width: 100%; height: 100%;"
-    allow="clipboard-write"
-    frameborder="0"
-  ></iframe>
+<style>
+  .chatbase-frame-container {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  .chatbase-frame-container iframe {
+    width: 100%;
+    height: 100%;
+    transform: scale(1.5); /* try 1.2 to 2.0 */
+    transform-origin: top left;
+  }
+</style>
+
+<div class="chatbase-frame-container">
+  <iframe src="https://www.chatbase.co/chatbot-iframe/ZDr1rnQGAvT2f7TNrOccx" frameborder="0"></iframe>
 </div>
